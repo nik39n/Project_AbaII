@@ -4,174 +4,186 @@ $bg-color:#242B33;
 $main-family:'Playfair Display', serif;
 $dop-family:'Raleway', sans-serif;
 body{
-    
-    background: url(../img/Gro.png);
-    background-repeat: no-repeat;
-    background-color: $bg-color;
-    background-size: 1996px;
-    .container-xl.first_screen{
-        padding-bottom: 75px;
-        .first_nav_row{
-            margin-top: 30px;
-            margin-bottom: 200px;
-            .main_navigation_menu{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                    font-weight: 400;
-                    font-family: $dop_family;
-                    font-size: 16px;
-                }
-            }
-        }
-        .second_row_heading{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .main_heading{
-                font-family: $main-family;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 48px;
-                line-height: 64px;
-                text-align: center;
-                color: $base-color;
-
-                width: 556px;
-                margin-bottom: 100px;
-            }
-        }
-        .contact_row_third{
-            margin-top: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .contact_item{
-                display: flex;
-                align-items: center;
-                &:not(:last-child){
-                    margin-right: 100px;
-                } 
-                .logo_contact_item{
-                    margin-right: 15px;
+    background-color: $bg-color; 
+    .first_container_wrapper{
+        background: url(../img/first_adver_block_bg.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position-y: -25px;
+        .container-xl.first_screen{
+            padding-bottom: 75px;
+            .first_nav_row{
+                margin-top: 30px;
+                margin-bottom: 200px;
+                .main_navigation_menu{
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
                     
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 400;
+                        font-family: $dop_family;
+                        font-size: 16px;
+                    }
                 }
-                .main_text_contact{
-                    font-family: $dop-family;
+            }
+            .second_row_heading{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .main_heading{
+                    font-family: $main-family;
                     font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 21px;
+                    font-weight: bold;
+                    font-size: 48px;
+                    line-height: 64px;
                     text-align: center;
-
-                    color: #FFFFFF;
+                    color: $base-color;
+    
+                    width: 556px;
+                    margin-bottom: 100px;
+                }
+            }
+            .contact_row_third{
+                margin-top: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .contact_item{
+                    display: flex;
+                    align-items: center;
+                    &:not(:last-child){
+                        margin-right: 100px;
+                    } 
+                    .logo_contact_item{
+                        margin-right: 15px;
+                        display: flex;
+                        align-items: center;
+                        
+                    }
+                    .main_text_contact{
+                        font-family: $dop-family;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-align: center;
+    
+                        color: #FFFFFF;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    .second_contaier_wrapper{
+        .container-xl.second_screen{
+            .advantage_row{
+            position: relative;
+            padding-top: 115px;
+            padding-bottom: 120px;
+                .second_bg{
+                    position: absolute;
+                    right:-13%;
+                    top: -13%;
+                }
+                .advantage_block{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .adventage_item{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        flex: 1;
+                        .advantage_icon{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 53px;
+                        }
+                        .advantage_text{
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 20px;
+                            line-height: 27px;
+                            text-align: center;
+                            color: #FFFFFF
+                        }
+                    }
+                }
+    
+            }
+            .list-apartament_row{
+                position: relative;
+                .third_bg{
+                    position: absolute;
+                    left:-18%;
+                    top: 13%;
+                    z-index: -1;
+                }
+                .second_heading{
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 48px;
+                    color: #D4C17F;
+                    display: block;
+    
+                    margin-bottom: 100px;
+                }
+                .list-apartament{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item_1{
+                        margin-right: 30px;
+                        margin-bottom: 30px;
+                    }
+                    .item_2{
+                        margin-bottom: 30px;
+                    }
+                    .item_3{
+                        margin-right: 30px;
+                    }
+                    .item{
+                        position: relative;
+                        .list-apartment_img{
+                            flex: 1;
+                            
+                        }
+                        p{
+                            position: absolute;
+                            z-index: 3;
+                            bottom: 80px;
+                            left: 40px;
+    
+                            font-family: Raleway;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 20px;
+                            line-height: 28px;
+    
+                            color: #FFFFFF;
+                        }
+                    }
                 }
             }
             
         }
     }
-    .container-xl.second_screen{
-        .advantage_row{
-        position: relative;
-        padding-top: 115px;
-        padding-bottom: 120px;
-            .second_bg{
-                position: absolute;
-                right:-13%;
-                top: -13%;
-            }
-            .advantage_block{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .adventage_item{
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    flex: 1;
-                    .advantage_icon{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-bottom: 53px;
-                    }
-                    .advantage_text{
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 20px;
-                        line-height: 27px;
-                        text-align: center;
-                        color: #FFFFFF
-                    }
-                }
-            }
-
-        }
-        .list-apartament_row{
-            position: relative;
-            .third_bg{
-                position: absolute;
-                left:-18%;
-                top: 13%;
-                z-index: -1;
-            }
-            .second_heading{
-                font-family: Playfair Display;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 36px;
-                line-height: 48px;
-                color: #D4C17F;
-                display: block;
-
-                margin-bottom: 100px;
-            }
-            .list-apartament{
-                display: flex;
-                flex-wrap: wrap;
-                .item_1{
-                    margin-right: 30px;
-                    margin-bottom: 30px;
-                }
-                .item_2{
-                    margin-bottom: 30px;
-                }
-                .item_3{
-                    margin-right: 30px;
-                }
-                .item{
-                    position: relative;
-                    .list-apartment_img{
-                        flex: 1;
-                        
-                    }
-                    p{
-                        position: absolute;
-                        z-index: 3;
-                        bottom: 80px;
-                        left: 40px;
-
-                        font-family: Raleway;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 20px;
-                        line-height: 28px;
-
-                        color: #FFFFFF;
-                    }
-                }
-            }
-        }
+    .third_container_wrapper{
+        padding-top: 180px;
+        background: url(../img/Rectangle1.png);
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position-y: 45px;
         .forms_block{
-            margin-top: 180px;
             display: flex;
             align-items: center;
             flex-direction: row;
