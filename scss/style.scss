@@ -3,6 +3,9 @@ $base-color: #D4C17F;
 $bg-color:#242B33;
 $main-family:'Playfair Display', serif;
 $dop-family:'Raleway', sans-serif;
+html {
+    scroll-behavior: smooth;
+    }
 body{
     background-color: $bg-color; 
     .first_container_wrapper{
@@ -20,12 +23,17 @@ body{
                     align-items: center;
                     justify-content: space-between;
                     
-                    a{
+                    .nav-item_a{
                         text-decoration: none;
                         color: #fff;
                         font-weight: 400;
                         font-family: $dop_family;
                         font-size: 16px;
+                        &:hover{
+                            color: #D4C17F;
+                            transition: 0.2s;
+                        }
+                        
                     }
                 }
             }
@@ -44,6 +52,18 @@ body{
     
                     width: 556px;
                     margin-bottom: 100px;
+                }
+                .mouse_button_svg{
+                    a{
+                        svg{
+                            fill:#D4C17F;
+                            &:hover{
+                                fill:#cfb34d;
+                                transition: 0.2s;
+                            }
+                        }   
+
+                    }
                 }
             }
             .contact_row_third{
@@ -93,13 +113,18 @@ body{
                 .advantage_block{
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: space-between;
                     .adventage_item{
+                        
                         display: flex;
                         align-items: center;
                         flex-direction: column;
-                        justify-content: space-between;
+                        justify-content: center;
                         flex: 1;
+                        height: 230px;
+                        &:hover{
+                            box-shadow: 0px 0px 20px 0px #191919
+                        }
                         .advantage_icon{
                             display: flex;
                             align-items: center;
@@ -152,6 +177,16 @@ body{
                         margin-right: 30px;
                     }
                     .item{
+                        &:hover{
+                            box-shadow: 0px 0px 20px 0px #191919;
+                            transition: 0.2s;
+                            p{
+                                bottom: 80px;
+                                transition:0.2s;
+                                
+                                
+                            }
+                        }
                         position: relative;
                         .list-apartment_img{
                             flex: 1;
@@ -160,7 +195,7 @@ body{
                         p{
                             position: absolute;
                             z-index: 3;
-                            bottom: 80px;
+                            bottom: 60px;
                             left: 40px;
     
                             font-family: Raleway;
@@ -229,7 +264,15 @@ body{
                     width: 255px;
                     height: 50px;
                     text-align: center;
-                    
+                    &:hover{
+                    border: 3px solid #d4c17f98;
+                    transition: 0.2s;
+                    }
+                    &:focus{
+                        outline: none;
+                        border: 3px solid $base-color;
+                        transition: 0.2s;
+                        }
                     &:not(:last-child){
                         margin-bottom: 35px;
                     }
@@ -276,7 +319,12 @@ body{
                     font-size: 16px;
                     line-height: 27px;
                     color: #FFFFFF;
-
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #e6d28a;;
+                        transition: 0.2s;
+                        
+                    }
                 }
 
             }
@@ -290,7 +338,7 @@ body{
 
             .fourth_bg{
                 position: absolute;
-                right: -200px;
+                right: -189px;
             }
         }
         .maps_nav_row{
@@ -341,7 +389,17 @@ body{
                     width: 255px;
                     height: 50px;
                     text-align: center;
-                    
+                    &:hover{
+                        border: 3px solid #d4c17f98;
+                        transition: 0.2s;
+                        }
+                    &:focus{
+                        outline: none;
+                        border: 3px solid $base-color;
+                        transition: 0.2s;
+
+
+                        }
 
                     &:first-child{
                         margin-right: 35px;
@@ -385,11 +443,10 @@ body{
                     font-size: 16px;
                     line-height: 27px;
                     color: #FFFFFF;
-                    max-width: ;
-                    
-                    @media only screen and (max-width: 600px) {
-                        
-                            
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #e6d28a;
+                        transition: 0.2s;
                     }
                 }
 

@@ -13,21 +13,34 @@
    <div class="first_container_wrapper">
     <div class="container-xl first_screen">
         <div class="row first_nav_row">
-            <div class=" col-lg-2 main_logo-wrapper">
-                <img src="img/main_logo.svg" alt="Жилой комплекс" class="main-logo">
-            </div>
+            <a href="#" class="main_logo_wrapper_a">
+                <div class=" col-lg-2 main_logo-wrapper">
+                    <img src="img/main_logo.svg" alt="Жилой комплекс" class="main-logo">
+                </div>
+            </a>
             <div class="col-lg-6 offset-lg-4 main_navigation_menu">
-                <a href="#"><div class="nav-items item_1">О комплексе</div></a>
-                <a href="#"><div class="nav-items item_2">Район</div></a>
-                <a href="#"><div class="nav-items item_3">Каталог квартир</div></a>
-                <a href="#"><div class="nav-items item_4">Ипотека</div></a>
-                <a href="#"><div class="nav-items item_5">Контакты</div></a>
+                <a href="#about" class="nav-item_a"><div class="nav-items item_1">О комплексе</div></a>
+                <a href="#area" class="nav-item_a"><div class="nav-items item_2">Район</div></a>
+                <a href="#list_apart" class="nav-item_a"><div class="nav-items item_3">Каталог квартир</div></a>
+                <a href="#mortgage" class="nav-item_a"><div class="nav-items item_4">Ипотека</div></a>
+                <a href="#contact" class="nav-item_a"><div class="nav-items item_5">Контакты</div></a>
             </div>
         </div>  
         <div class="row second_row_heading">
             <h1 class="main_heading">Жилой комплекс в историческом центре</h1>
             <div class="mouse_button_svg">
-                <a href="#"><img src="img/mouse_button.svg" alt="mouse_scroll"></a>
+                <a href="#list_apart"><svg width="40" height="40" viewBox="0 0 40 40"  xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path d="M19.9689 0C13.4811 0 8.20313 5.27802 8.20313 11.7657V28.2343C8.20313 34.722 13.4811 40 19.9689 40C26.4566 40 31.7346 34.722 31.7346 28.2343V11.7657C31.7346 5.27802 26.4566 0 19.9689 0ZM29.3347 28.2343C29.3347 33.3984 25.1331 37.6001 19.9689 37.6001C14.8047 37.6001 10.603 33.3984 10.603 28.2343V11.7657C10.603 6.60156 14.8047 2.3999 19.9689 2.3999C25.1331 2.3999 29.3347 6.60156 29.3347 11.7657V28.2343Z" />
+                        <path d="M19.9692 7.95715C19.3063 7.95715 18.7692 8.49426 18.7692 9.1571V14.6802C18.7692 15.3427 19.3063 15.8801 19.9692 15.8801C20.6317 15.8801 21.1691 15.3427 21.1691 14.6802V9.1571C21.1691 8.49426 20.632 7.95715 19.9692 7.95715Z" />
+                    </g>
+                        <defs>
+                            <clipPath id="clip0">
+                              <rect width="40" height="40" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
             </div>
 
         </div>
@@ -51,7 +64,7 @@
    </div>
     <div class="second_contaier_wrapper">
         <div class="container-xl second_screen">
-            <div class="row advantage_row">
+            <div class="row advantage_row" id="about">
                 <img src="img/II.png" alt="" class="second_bg">
                 <div class="col-lg-10 offset-lg-1 advantage_block">
                     <div class="adventage_item adventage_item_1">
@@ -81,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row list-apartament_row">
+            <div class="row list-apartament_row" id="list_apart">
                 <img src="img/III.png" alt="" class="third_bg">
                 <h2 class="second_heading">Наши квартиры</h2>
                 <div class="list-apartament">
@@ -119,14 +132,14 @@
                 </frame>
                 <img src="img/IV.png" alt="" class="fourth_bg">
             </div>
-            <div class="row maps_nav_row">
+            <div class="row maps_nav_row" id="area">
                 <img src="img/V.png" alt="fifth_bg" class="fifth_bg">
                 <h3 class="fifth_heading">Район на карте</h3>
                 <frame class="map_frame">
-                    <iframe width="1110" height="358" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=36.24918848276139%2C49.982271529657766%2C36.25169903039933%2C49.98343743057695&amp;layer=mapnik"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2870.325094875685!2d30.572102332987203!3d50.48259118875267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1d28d6f25b3%3A0x74f40dd36147e7f7!2z0KLRgNC-0LXRidC40L3QsC0y!5e0!3m2!1sru!2sua!4v1604918305744!5m2!1sru!2sua" width="1110" height="358" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </frame>
             </div>
-            <div class="row questions_row">
+            <div class="row questions_row" id="mortgage">
                 <h3 class="sixth_heading">Есть вопросы?</h3>
                 <form class="form_third-row" >
                     <p class="info-warn">*Мы никому не передаем ваши данные. 
@@ -138,7 +151,7 @@
             </div> 
         </div>
    </div>
-    <div class="footer-nav">
+    <div class="footer-nav" id="contact">
         <div class="container">
             <div class="row footer-row">
                 <div class=" col-lg-2 main_logo-wrapper">
