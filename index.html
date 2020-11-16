@@ -7,24 +7,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <title>Order design</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="shortcut icon" href="img/search_logo/" type="image/x-icon">
+    <title>HouseVop - Жилой Комплекс </title>
 </head>
 <body>
+    <a href="#test">
+        <div class="up">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            height="100%" width="100%" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;"
+                    xml:space="preserve" fill="#e0e0e0">
+                <g>
+                    <path d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285
+                        C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854
+                        c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848
+                        c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566
+                        C284.929,199.378,283.984,197.188,282.082,195.285z"/>
+                </g>
+            </svg>
+        </div>
+    </a>
    <div class="first_container_wrapper">
     <div class="container-xl first_screen">
         <div class="row first_nav_row">
-            <a href="#" class="main_logo_wrapper_a">
+            <a href="index.html#test" class="main_logo_wrapper_a" id="test">
                 <div class=" col-lg-2 main_logo-wrapper">
-                    <img src="img/main_logo.svg" alt="Жилой комплекс" class="main-logo">
+                    <img src="img/main/svg/main_logo.svg" alt="Жилой комплекс" class="main-logo">
                 </div>
             </a>
-            <div class="col-lg-6 offset-lg-4 main_navigation_menu">
+            <div class=" col-3 col-lg-6 offset-lg-4 main_navigation_menu">
                 <a href="#about" class="nav-item_a"><div class="nav-items item_1">О комплексе</div></a>
                 <a href="#area" class="nav-item_a"><div class="nav-items item_2">Район</div></a>
                 <a href="#list_apart" class="nav-item_a"><div class="nav-items item_3">Каталог квартир</div></a>
                 <a href="#mortgage" class="nav-item_a"><div class="nav-items item_4">Ипотека</div></a>
                 <a href="#contact" class="nav-item_a"><div class="nav-items item_5">Контакты</div></a>
+                <label for="trigger" class="burger">
+                    <i class="fas fa-bars"></i>
+                </label>
             </div>
+            <input id="trigger" type="checkbox" checked>
+            <div class="nav-links">
+                <div class="link"><a href="#about" class="link_a"><div class="nav-items item_1">О комплексе</div></a></div>
+                <div class="link"><a href="#area" class="link_a"><div class="nav-items item_2">Район</div></a></div>
+                <div class="link"><a href="#list_apart" class="link_a"><div class="nav-items item_3">Каталог квартир</div></a></div>
+                <div class="link"><a href="#mortgage" class="link_a"><div class="nav-items item_4">Ипотека</div></a></div>
+                <div class="link"><a href="#contact" class="link_a"><div class="nav-items item_5">Контакты</div></a></div>
+            </div>  
         </div>  
         <div class="row second_row_heading">
             <h1 class="main_heading">Жилой комплекс в историческом центре</h1>
@@ -47,7 +75,7 @@
         <div class="row contact_row_third">
             <div class="contact_item">
                 <div class="logo_contact_item maps">
-                    <img src="img/tel_svg.svg" alt="maps">
+                    <img src="./img/main/svg/tel_svg.svg" alt="maps">
                 </div>
                 <div class="main_text_contact">
                     Наб. реки Фонтанки 10-15
@@ -55,7 +83,7 @@
             </div>
             <div class="contact_item">
                 <div class="logo_contact_item tel">
-                    <img src="img/phone-call.svg" alt="telephone">
+                    <img src="./img/main/svg/phone-call.svg" alt="telephone">
                 </div>
                 <div class="main_text_contact">8 (812) 123-45-67</div>
             </div>
@@ -65,48 +93,60 @@
     <div class="second_contaier_wrapper">
         <div class="container-xl second_screen">
             <div class="row advantage_row" id="about">
-                <img src="img/II.png" alt="" class="second_bg">
-                <div class="col-lg-10 offset-lg-1 advantage_block">
+                <h2 class="advanages_heding">Преимущества</h2>
+                <img src="img/main/bg/II.png" alt="" class="second_bg">
+                <div class="col-lg-11 offset-lg-1 advantage_block">
+                    
                     <div class="adventage_item adventage_item_1">
                         <div class="advantage_icon">
-                            <img src="./img/advantage_item_first.svg" alt="">
+                            <img src="./img/main/svg/advantage_item_first.svg" alt="">
                         </div>
-                        <div class="advantage_text">Рядом исторические парки и скверы</div>
+                        <div class="advantage_text">Рядом исторические<br> парки и скверы</div>
                     </div>
                     <div class="adventage_item adventage_item_2">
                         <div class="advantage_icon">
-                            <img src="./img/advantage_item_second.svg" alt="">
+                            <img src="./img/main/svg/advantage_item_second.svg" alt="">
                         </div>
-                        <div class="advantage_text">Полностью обустроенный</div>
+                        <div class="advantage_text">Полностью <br> обустроенный</div>
                     </div>
                     <div class="adventage_item adventage_item_3">
                         <div class="advantage_icon">
-                            <img src="./img/advantage_item_third.svg" alt="">
+                            <img src="./img/main/svg/advantage_item_third.svg" alt="">
                         </div>
-                        <div class="advantage_text">10 фонтанов на территории</div>
+                        <div class="advantage_text">10 фонтанов <br> на территории</div>
                     </div>
                     <div class="adventage_item adventage_item_4">
                         <div class="advantage_icon">
-                            <img src="./img/advantage_item_fourth.svg" alt="">
+                            <img src="./img/main/svg/advantage_item_fourth.svg" alt="">
                         </div>
-                        <div class="advantage_text">6 км
+                        <div class="advantage_text">6 км <br>
                             велодорожек</div>
                     </div>
                 </div>
             </div>
             <div class="row list-apartament_row" id="list_apart">
-                <img src="img/III.png" alt="" class="third_bg">
+                <img src="img/main/bg/III.png" alt="" class="third_bg">
                 <h2 class="second_heading">Наши квартиры</h2>
                 <div class="list-apartament">
-                    <a href="#"><div class="item_1 item"><img src="img/first_apartment_img.png" alt="" class="list-apartment_img list-apartment_img_1"><p>Лофт — 3 этажа</p></div></a>
-                    <a href="#"><div class="item_2 item">
-                    <img src="img/second_apartment_img.png" alt="" class="list-apartment_img list-apartment_img_2"><p>Лофт — 2 этажа</p>
-                </div></a>
-                <a href="#"><div class="item_3 item"> <img src="img/third_apartment_img.png" alt="" class="list-apartment_img list-apartment_img_3"><p>Лофт — 3 этажа</p></div></a>
-                <a href="#"><div class="item_4 item">
-                            <img src="img/rourth_apartment_img.png" alt="" class="list-apartment_img list-apartment_img_4">
-                            <p>Лофт — 2 этажа</p>
-                    </div></a>
+                    <a href="pages/loft_1.html">
+                        <div class="item_1 item">
+                            <img src="img/main/Main list/1.png" alt="" class="list-apartment_img list-apartment_img_1">
+                            <p>Лофт в темном дереве</p>
+                        </div>
+                    </a>
+                    <a href="pages/loft_2.html">
+                        <div class="item_2 item">
+                            <img src="img/main/Main list/2.png" alt="" class="list-apartment_img list-apartment_img_2">
+                            <p>Лофт в коричневом дереве</p>
+                        </div>
+                     </a>
+                <a href="pages/loft_3.html"><div class="item_3 item"> <img src="img/main/Main list/3.png" alt="" class="list-apartment_img list-apartment_img_3"><p>Лофт в светлом дереве</p></div></a>
+                <a href="pages/loft_4.html">
+                    <div class="item_4 item">
+                            <img src="img/main/Main list/4.png" alt="" class="list-apartment_img list-apartment_img_4">
+                            <p>Лофт в светлом дереве</p>
+                    </div>
+                </a>
                     
                 </div>
             </div>
@@ -117,7 +157,7 @@
             <div class="row forms_block">
                 <!-- <img src="img/" alt="second_bg" class="second-bg"> -->
                 <h3 class="third_heading">Хотите посмотреть?</h3>
-                <div class="p third_text_block">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </div>
+                <div class="p third_text_block">Хотите посмотреть наши образцы Жилого Комплекса HouseVop,у нас вы найдете все что вам необходимо и хотели бы увидеть в современном и технологическом ЖК страны, тогда оставляйте ваши данные в форме справа и наш менеджер в скором времени свяжеться с вами</div>
                 <form class="form_third-row" >
                     <input type="text" name="your_name" id="first_input-name" placeholder="Ваше имя" class="input_standart">
                     <input type="text" name="" id=""  placeholder="Ваш телефон" class="input_standart">
@@ -127,16 +167,20 @@
                 </form>
             </div>
             <div class="row video_frame_row">
-                <frame class="video_frame">
-                    <iframe width="719" height="650" src="https://www.youtube.com/embed/Fy1_I27Ubrg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </frame>
-                <img src="img/IV.png" alt="" class="fourth_bg">
+                <div class="video_frame">
+                    <div class="scr scr_main">
+                        <video autoplay muted loop id="myVideo Video_main" class="vid_main">
+                            <source src="img/video/---33-2.----.----.mp4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <img src="img/main/bg/IV.png" alt="" class="fourth_bg">
             </div>
             <div class="row maps_nav_row" id="area">
-                <img src="img/V.png" alt="fifth_bg" class="fifth_bg">
+                <img src="img/main/bg/V.png" alt="fifth_bg" class="fifth_bg">
                 <h3 class="fifth_heading">Район на карте</h3>
                 <frame class="map_frame">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2870.325094875685!2d30.572102332987203!3d50.48259118875267!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1d28d6f25b3%3A0x74f40dd36147e7f7!2z0KLRgNC-0LXRidC40L3QsC0y!5e0!3m2!1sru!2sua!4v1604918305744!5m2!1sru!2sua" width="1110" height="358" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2444236685037!2d30.337639216097188!3d59.94467898187832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Nw!5e0!3m2!1sru!2sua!4v1605358014317!5m2!1sru!2sua" width="100%" height='360' frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </frame>
             </div>
             <div class="row questions_row" id="mortgage">
@@ -144,8 +188,8 @@
                 <form class="form_third-row" >
                     <p class="info-warn">*Мы никому не передаем ваши данные. 
                         И не сохраняем ваш номер в базу.</p>
-                    <input type="text" name="your_name" id="first_input-name" placeholder="Ваше имя" class="input_standart">
-                    <input type="text" name="" id=""  placeholder="Ваш телефон" class="input_standart">
+                    <input type="text" name="your_name" id="first_input-name" placeholder="Ваше имя" class="input_standart first_name">
+                    <input type="text" name="" id=""  placeholder="Ваш телефон" class="input_standart second_tel">
                     <input type="submit" value="Посмотреть район"  class="button_chose-area">
                 </form>
             </div> 
@@ -154,29 +198,23 @@
     <div class="footer-nav" id="contact">
         <div class="container">
             <div class="row footer-row">
-                <div class=" col-lg-2 main_logo-wrapper">
-                    <img src="img/main_logo.svg" alt="Жилой комплекс" class="main-logo">
-                </div>
-                <div class="col-lg-2 offset-lg-1">
+                <a href="index.html#test" class="main_link">
+                    <div class=" col-lg-2 main_logo-wrapper">
+                        <img src="img/main/svg/main_logo.svg" alt="Жилой комплекс" class="main-logo">
+                    </div>
+                </a>
+                <div class="col-lg-2 offset-lg-2">
                     <div class="footer-nav-column">
-                        <a href=""><div class="footer-nav_first-column_item_1 footer_item">О комплексе</div></a>
-                        <a href=""><div class="footer-nav_first-column_item_2 footer_item">Район</div></a>
-                        <a href=""><div class="footer-nav_first-column_item_3 footer_item">Каталог квартир</div></a>
-                        <a href=""><div class="footer-nav_first-column_item_4 footer_item">Ипотека</div></a>
-                        <a href=""><div class="footer-nav_first-column_item_5 footer_item">Контакты</div></a>
+                        <a href="index.html#about"><div class="footer-nav_first-column_item_1 footer_item">О комплексе</div></a>
+                        <a href="index.html#area"><div class="footer-nav_first-column_item_2 footer_item">Район</div></a>
+                        <a href="index.html#list_apart"><div class="footer-nav_first-column_item_3 footer_item">Каталог квартир</div></a>
+                        <a href="index.html#mortgage"><div class="footer-nav_first-column_item_4 footer_item">Ипотека</div></a>
+                        <a href="index.html#contact"><div class="footer-nav_first-column_item_5 footer_item">Контакты</div></a>
                     </div>
                 </div>
-                <div class="col-lg-2 offset-lg-1">
-                    <div class="footer-nav-column">
-                        <a href="" class="item"><div class="footer-nav_second-column_item_1 footer_item">О комплексе</div></a>
-                        <a href="" class="item"><div class="footer-nav_second-column_item_2 footer_item">Район</div></a>
-                        <a href="" class="item"><div class="footer-nav_second-column_item_3 footer_item">Каталог квартир</div></a>
-                        <a href=""><div class="footer-nav_second-column_item_4 footer_item">Ипотека</div></a>
-                        <a href=""><div class="footer-nav_second-column_item_5 footer_item">Контакты</div></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1">
-                    <div class="footer-nav-column">
+                
+                <div class="col-lg-3 offset-lg-3">
+                    <div class="footer-nav-column footer-nav-column_2">
                         <a href=""><div class="footer-nav_third-column_item_1 footer_item">Адрес: Наб. реки Фонтанки 10-15</div></a>
                         <a href=""><div class="footer-nav_third-column_item_2 footer_item">Телефон: 8 (812) 123-45-67</div></a>
                         <a href=""><div class="footer-nav_third-column_item_3 footer_item">Отдел продаж: 10:00 - 20:00</div></a>
@@ -197,7 +235,7 @@
         </div>
     </div>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
