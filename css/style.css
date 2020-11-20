@@ -503,7 +503,7 @@ body .first_container_wrapper .container-xl.first_screen .contact_row_third .con
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 body .first_container_wrapper_loft_4 {
   background: none;
@@ -581,7 +581,7 @@ body .second_contaier_wrapper .container-xl.second_screen .advantage_row .advant
   font-size: 20px;
   line-height: 27px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 body .second_contaier_wrapper .container-xl.second_screen .list-apartament_row {
   position: relative;
@@ -688,7 +688,7 @@ body .second_contaier_wrapper .container-xl.second_screen .list-apartament_row .
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 body .third_container_wrapper {
   padding-top: 180px;
@@ -754,7 +754,7 @@ body .third_container_wrapper .forms_block .third_text_block {
   font-size: 16px;
   line-height: 24px;
   margin-right: 35px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media only screen and (max-width: 576px) {
   body .third_container_wrapper .forms_block .third_text_block {
@@ -782,7 +782,7 @@ body .third_container_wrapper .forms_block .form_third-row .input_standart {
   transition: 0.2s;
 }
 body .third_container_wrapper .forms_block .form_third-row .input_standart:hover {
-  border: 3px solid #d4c17f98;
+  border: 3px solid #D4C17F98;
 }
 body .third_container_wrapper .forms_block .form_third-row .input_standart:focus {
   outline: none;
@@ -886,7 +886,7 @@ body .third_container_wrapper .forms_block .form_third-row .button_chose-area {
   font-weight: bold;
   font-size: 16px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -1030,7 +1030,7 @@ body .third_container_wrapper .questions_row form .input_standart {
   transition: 0.2s;
 }
 body .third_container_wrapper .questions_row form .input_standart:hover {
-  border: 3px solid #d4c17f98;
+  border: 3px solid #D4C17F98;
 }
 body .third_container_wrapper .questions_row form .input_standart:focus {
   outline: none;
@@ -1137,7 +1137,7 @@ body .third_container_wrapper .questions_row form .button_chose-area {
   font-weight: bold;
   font-size: 16px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -1181,9 +1181,18 @@ body .footer-nav .footer-row .footer-nav-column .footer-nav_third-column_item_3 
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: 0.2s;
   margin: 10px 0;
+}
+body .footer-nav .footer-row .footer-nav-column .footer-nav_third-column_item_2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 576px) {
+  body .footer-nav .footer-row .footer-nav-column .footer-nav_third-column_item_2 {
+    margin: 10px 0;
+  }
 }
 body .footer-nav .footer-row .footer-nav-column a {
   text-decoration: none;
@@ -1193,7 +1202,7 @@ body .footer-nav .footer-row .footer-nav-column a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: 0.2s;
 }
 body .footer-nav .footer-row .footer-nav-column a .vip {
