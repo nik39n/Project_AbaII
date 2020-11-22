@@ -1,0 +1,243 @@
+.second_contaier_wrapper {
+    .container-xl.second_screen {
+        .advantage_row {
+            position: relative;
+            padding-top: 115px;
+            padding-bottom: 120px;
+
+            @media only screen and (max-width: $minimal-screen-size) {
+                padding-top: 80px;
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 48px;
+                color: $base-color;
+            }
+            @media only screen and (max-width: $average-screen-size) {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .advanages_heding {
+                display: none;
+                font-size: 36px;
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    display: block;
+                    margin-bottom: 50px;
+                    padding-left: 15px;
+                    font-size: 30px;
+                }
+            }
+
+            .second_bg {
+                position: absolute;
+                right: -13%;
+                top: -13%;
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    display: none;
+                }
+                @media only screen and (max-width: $average-screen-size) {
+                    display: none;
+                }
+            }
+
+            .advantage_block {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    flex-direction: column;
+                }
+
+                .adventage_item {
+
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 220px;
+                    transition: 0.2s;
+                    padding: 26px 10px;
+
+                    &:hover {
+                        box-shadow: 4px 4px 20px 3px #212121;
+
+                    }
+
+                    .advantage_icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 53px;
+                    }
+
+                    .advantage_text {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 20px;
+                        line-height: 27px;
+                        text-align: center;
+                        color: $white-color;
+                        @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .list-apartament_row {
+            position: relative;
+
+            .third_bg {
+                position: absolute;
+                left: -18%;
+                top: 13%;
+                z-index: -1;
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    display: none;
+                }
+            }
+
+            .second_heading {
+                font-family: Playfair Display;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 48px;
+                color: $base-color;
+                display: block;
+
+                margin-bottom: 100px;
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    padding-left: 15px;
+                    margin-bottom: 50px;
+                    font-size: 30px;
+
+                }
+                @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size) {
+                    padding-left: 15px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .list-apartament {
+                display: flex;
+                flex-wrap: wrap;
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    flex-direction: column;
+                    width: 376px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size) {
+                    flex-direction: column;
+                    width: 760px;
+                    height: 1600px;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .item_1 {
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                    }
+                    @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size) {
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                .item_2 {
+                    margin-bottom: 30px;
+
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                    }
+                    @media only screen and (max-width: $average-screen-size) {
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                .item_3 {
+                    margin-right: 30px;
+
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                    }
+                    @media only screen and (max-width: $average-screen-size) {
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                .item {
+                    transition: 0.2s;
+                    width: 535px;
+                    height: 320px;
+
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        flex-direction: column;
+                        width: 350px;
+                        height: 210px;
+                    }
+                    @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size) {
+                        width: 650px;
+                    }
+
+                    &:hover {
+                        box-shadow: 6px 6px 20px 5px #0d0d0d;
+
+                        p {
+                            bottom: 80px;
+                        }
+                    }
+
+                    position: relative;
+
+                    .list-apartment_img {
+                        flex: 1;
+                        width: 100%;
+                    }
+
+                    p {
+                        transition: 0.2s;
+                        position: absolute;
+                        z-index: 3;
+                        bottom: 60px;
+                        left: 40px;
+
+                        font-family: Raleway;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 28px;
+
+                        color: $white-color;
+                        @media only screen and (max-width: $average-screen-size) {
+                            bottom: 30px;
+                            left: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

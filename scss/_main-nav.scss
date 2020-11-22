@@ -1,0 +1,226 @@
+.first_container_wrapper {
+    background: url(../img/main/bg/first_adver_block_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -25px;
+
+    @media only screen and (max-width: $minimal-screen-size) {
+        background: url(../img/mobile_img/main_img.png);
+    }
+
+    .container-xl.first_screen {
+        padding-bottom: 75px;
+
+        .first_nav_row {
+            margin-top: 30px;
+            margin-bottom: 200px;
+
+            @media only screen and (max-width: $minimal-screen-size) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 130px;
+            }
+
+            .main_navigation_menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    justify-content: center;
+                }
+
+                .nav-item_a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 400;
+                    font-family: $dop_family;
+                    font-size: 16px;
+                    transition: 0.2s;
+
+                    &:hover {
+                        color: $base-color;
+
+                    }
+
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        display: none;
+                    }
+                }
+
+                .burger {
+                    color: #fff;
+                    display: none;
+                    width: 50px;
+                    height: 50px;
+                    svg{
+                        width: 100%;
+                        path{
+                            fill: #fff;
+                        }
+                        fill: #fff;
+                    }
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        display: flex;
+                    }
+                }
+            }
+
+            #trigger {
+                display: none;
+                transition: 2s;
+
+                &:checked+.nav-links {
+                    display: none;
+
+                }
+            }
+
+            .nav-links {
+
+                display: none;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 20px;
+
+                .link {
+                    width: 100%;
+                    padding: 20px;
+                    display: none;
+                    transition: 0.2s;
+
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        display: flex;
+                    }
+
+                    .link_a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 24px;
+                        font-weight: 500;
+                        text-shadow: 0 2px 8px $base-color;
+
+                        @media only screen and (max-width: $minimal-screen-size) {
+                            display: flex;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 16px;
+                    }
+
+                    &:hover {
+                        background-color: $base-color;
+                    }
+                }
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    display: flex;
+                }
+            }
+        }
+        .main_content{
+            margin-top: 100px;
+            color: #fff;
+            @media only screen and (max-width: $minimal-screen-size) {
+                margin-top: 50px;
+            }
+        }
+
+        .firts_nav_row_for_loft_4 {
+            margin-bottom: 0px;
+        }
+
+        .second_row_heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .main_heading {
+                font-family: $main-family;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 64px;
+                text-align: center;
+                color: $base-color;
+
+                width: 556px;
+                margin-bottom: 100px;
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    width: 350px;
+                    font-size: 38px;
+                    line-height: 54px;
+                }
+            }
+
+            .mouse_button_svg {
+                a {
+                    svg {
+                        fill: $base-color;
+                        transition: 0.2s;
+
+                        &:hover {
+                            fill: #9c8328;
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .contact_row_third {
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media only screen and (max-width: $minimal-screen-size) {
+                margin-top: 100px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .contact_item {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-right: 100px;
+
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        margin-right: 0px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                @media only screen and (max-width: $minimal-screen-size) {
+                    margin-right: 0px;
+                }
+
+                .logo_contact_item {
+                    margin-right: 15px;
+                    display: flex;
+                    align-items: center;
+
+                }
+
+                .main_text_contact {
+                    font-family: $dop-family;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+
+                    color: $white-color;
+                }
+            }
+
+        }
+    }
+}

@@ -1,4 +1,5 @@
 @import'variable';
+@import'footer-nav';
 
 .first_container_wrapper_loft_4 {
     .video-row {
@@ -18,8 +19,11 @@
             top: 50%;
             z-index: 20;
 
-            @media only screen and (max-width: 576px) {
+            @media only screen and (max-width: $minimal-screen-size) {
                 top: 25%;
+            }
+            @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
+                top: 40%;
             }
 
             .main_heading {
@@ -33,10 +37,14 @@
 
                 margin-bottom: 80px;
 
-                @media only screen and (max-width: 576px) {
+                @media only screen and (max-width: $minimal-screen-size) {
                     font-size: 36px;
                     line-height: 54px;
                 }
+                @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
+                    font-size: 36px;
+                }
+                
             }
         }
     }
@@ -44,7 +52,7 @@
     .main_row {
         margin-top: 120px;
 
-        @media only screen and (max-width: 576px) {
+        @media only screen and (max-width: $minimal-screen-size) {
             margin-top: 100px;
         }
     }
@@ -56,7 +64,7 @@
         flex-direction: row;
         position: relative;
 
-        @media only screen and (max-width: 576px) {
+        @media only screen and (max-width: $minimal-screen-size) {
             justify-content: center;
         }
 
@@ -92,10 +100,13 @@
 
             color: #FFFFFF;
 
-            @media only screen and (max-width: 576px) {
+            @media only screen and (max-width: $minimal-screen-size) {
                 margin-right: 0;
                 width: 100%;
                 max-width: 340px;
+            }
+            @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size) {
+                padding-left: 26px;
             }
         }
 
@@ -104,10 +115,14 @@
             flex-wrap: wrap;
             flex: 1;
 
-            @media only screen and (max-width: 576px) {
+            @media only screen and (max-width: $minimal-screen-size) {
                 align-items: center;
                 justify-content: center;
                 margin-top: 30px;
+            }
+            @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size) {
+                align-items:center;
+                flex-direction: column;
             }
 
             .input_standart {
@@ -131,7 +146,7 @@
                 &:not(:last-child) {
                     margin-bottom: 35px;
 
-                    @media only screen and (max-width: 576px) {
+                    @media only screen and (max-width: $minimal-screen-size) {
                         margin-bottom: 20px;
                     }
                 }
@@ -139,7 +154,10 @@
                 &:first-child {
                     margin-right: 35px;
 
-                    @media only screen and (max-width: 576px) {
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        margin-right: 0px;
+                    }
+                    @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
                         margin-right: 0px;
                     }
                 }
@@ -173,12 +191,15 @@
 
                 color: #E7E7E7;
 
-                @media only screen and (max-width: 576px) {
+                @media only screen and (max-width: $minimal-screen-size) {
                     margin-right: 0px;
                     order: 4;
                     font-size: 12px;
                     height: inherit;
                     padding-top: 5px;
+                }
+                @media only screen and (max-width: $minimal-screen-size) {
+                   
                 }
             }
 
@@ -204,8 +225,12 @@
 
                 }
 
-                @media only screen and (max-width: 576px) {
+                @media only screen and (max-width: $minimal-screen-size) {
                     margin-top: 15px;
+                }
+                @media only screen and (max-width: $minimal-screen-size) {
+                    margin-top: 15px;
+
                 }
             }
 
@@ -215,7 +240,10 @@
     .list-row {
         margin-top: 80px;
 
-        @media only screen and (max-width: 576px) {
+        @media only screen and (max-width: $minimal-screen-size) {
+            margin-top: 100px;
+        }
+        @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
             margin-top: 100px;
         }
 
@@ -232,7 +260,12 @@
 
             margin-bottom: 80px;
 
-            @media only screen and (max-width: 576px) {
+            @media only screen and (max-width: $minimal-screen-size) {
+                font-size: 30px;
+                margin-bottom: 30px;
+                padding-left: 15px;
+            }
+            @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
                 font-size: 30px;
                 margin-bottom: 30px;
                 padding-left: 15px;
@@ -245,7 +278,10 @@
             justify-content: space-between;
             width: 100%;
 
-            @media only screen and (max-width: 576px) {
+            @media only screen and (max-width: $minimal-screen-size) {
+                flex-direction: column;
+            }
+            @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
                 flex-direction: column;
             }
 
@@ -253,12 +289,19 @@
                 position: relative;
 
                 img {
-                    @media only screen and (max-width: 576px) {
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        width: 100%;
+                    }
+                    @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
                         width: 100%;
                     }
                 }
 
-                @media only screen and (max-width: 576px) {
+                @media only screen and (max-width: $minimal-screen-size) {
+                    margin-bottom: 30px;
+                    width: 350px;
+                }
+                @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
                     margin-bottom: 30px;
                     width: 350px;
                 }
@@ -271,7 +314,12 @@
                     font-size: 18px;
                     transition: 0.2s;
 
-                    @media only screen and (max-width: 576px) {
+                    @media only screen and (max-width: $minimal-screen-size) {
+                        display: flex;
+                        bottom: 0;
+                        left: 20px;
+                    }
+                    @media only screen and (min-width: $minimal-screen-size) and(max-width: $average-screen-size){
                         display: flex;
                         bottom: 0;
                         left: 20px;
